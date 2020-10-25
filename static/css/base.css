@@ -1,4 +1,23 @@
-base.css
+@font-face {
+    font-family: 'S-CoreDream-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-7ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'S-CoreDream-3Light';
@@ -12,17 +31,44 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-    font-family: 'S-CoreDream-3Light', 'Kumbh Sans', sans-serif;
+    font-family: 'S-CoreDream-3Light';
+
+    /* 스크롤 삭제 */
+    -ms-overflow-style: none;
+}
+
+/* 스크롤 삭제 */
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1{
+    font-family: 'S-CoreDream-5Medium';
+    color: rgb(255, 124, 115);
+    text-align: center;
+    margin: 5% 0 2% 0;
+    font-size: 2.5rem;
 }
 
 a:link {
-    color: black;
+    color:rgb(53, 53, 53);
     text-decoration: none;
 }
 
 a:visited {
-    color: black;
+    color: rgb(53, 53, 53);
     text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
 }
 
 /* Navbar */
@@ -33,21 +79,31 @@ a:visited {
     height: 60px;
 
     /* 컬러 및 투명도 설정 */
-    background-color: rgb(218, 41, 28);
-    box-shadow: 0 3px 10px 0 rgba(204, 204, 204, 0.5);
-    /* border-bottom: solid rgba(131, 119, 236, 0.3) 1px; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 10px 3px rgba(238, 50, 36, 0.15);
 
     /* 위치 설정 */
     display: flex;
-    position: relative;
+    position: fixed;
+    top: 0;
     z-index: 99;
-    
+
 }
 
+.logo {
+    display: inline-block;
+    position: absolute;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    line-height: 60px;
+}
 
-
-
-#nav-right{
+#nav-right {
     display: inline-block;
     width: 390px;
     position: absolute;
@@ -55,20 +111,27 @@ a:visited {
     margin: 0px;
     right: 0px;
     line-height: 60px;
+    text-align: center;
 }
 
-#nav-right li{
+#navright :hover {
+    cursor: pointer;
+}
+
+#nav-right li {
     list-style: none;
     display: inline-block;
-    font-weight: bold;
     vertical-align: middle;
-    color: #FFFFFF;
     margin-right: 20px;
-    right:0px;
-    text-align: -webkit-match-parent;
+    right: 0px;
+    text-align: right;
 }
 
-ul{
+#nav-right li:last-child {
+    margin-right: 0px;
+}
+
+ul {
     list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -77,15 +140,26 @@ ul{
     padding-inline-start: 40px;
 }
 
-.logo{
-    position: absolute;
-    float: left;
-    padding: 0px;
-    margin: 0px;
-    width: 300px;
+.user {
+
+    text-align: center;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
     line-height: 60px;
 }
 
-footer {
-    padding-top: 1.5rem;
+.footer {
+    width: 100%;
+    height: 200px;
+    margin-top: -10px;
+    background-color:rgb(255, 206, 203);
+    text-align: center;
+    line-height: 200px;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+}
+
+button:focus {
+	outline: none;
 }
