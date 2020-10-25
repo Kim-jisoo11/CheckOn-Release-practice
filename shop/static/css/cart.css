@@ -1,0 +1,167 @@
+.order-list {
+    margin-top: 5%;
+
+}
+
+table {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    font-family: 'S-CoreDream-3Light';
+    border-collapse: separate;
+    border-spacing: 0;
+
+}
+
+tr th,
+tr td {
+    border-bottom: 1px solid rgb(255, 206, 203);
+    padding: 10px;
+}
+
+tr th:first-child,
+tr td:first-child {
+    border-left: 1px solid rgb(255, 206, 203);
+}
+
+tr th:last-child,
+tr td:last-child {
+    border-right: 1px solid rgb(255, 206, 203);
+}
+
+tr th {
+    background: rgb(255, 206, 203);
+    border-top: 1px solid rgb(255, 206, 203);
+    text-align: center;
+}
+
+tr:first-child th:first-child {
+    border-top-left-radius: 8px;
+}
+
+tr:first-child th:last-child {
+    border-top-right-radius: 8px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+p {
+    text-align: center;
+}
+
+.img {
+    align-items: center;
+}
+
+.table-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.totalprice {
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 8px;
+    padding: 2rem 0;
+    background-color: rgb(255, 206, 203);
+}
+
+.preserve-3d {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+
+@media screen and (max-width: 1260px) {
+    .back {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .back {
+        width: 100%;
+    }
+}
+
+.button_base {
+    margin: 0;
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+    font-size: 15px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: 20px;
+    margin-left: -100px;
+    margin-bottom: 10%;
+    width: 200px;
+    height: 50px;
+    box-shadow: 3px 2px 6px 2px rgba(238, 50, 36, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+.button_base:hover {
+    cursor: pointer;
+}
+
+.mybtn {
+    color: rgb(255, 124, 115);
+    background-color: #ffffff;
+    padding: 10px;
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+}
+
+.mybtn:hover {
+    color: #ffffff;
+    background-color: rgb(255, 124, 115);
+    animation: b09_electric_blinkIn 0.1s step-end 0 2;
+    -webkit-animation: b09_electric_blinkIn 0.1s step-end 0 2;
+    -moz-animation: b09_electric_blinkIn 0.1s step-end 0 2;
+    transition: all 0.2s ease 0.2s;
+    -webkit-transition: all 0.2s ease 0.2s;
+    -moz-transition: all 0.2s ease 0.2s;
+}
+
+@-webkit-keyframes b09_electric_blinkIn {
+
+    from,
+    to {
+        background-color: #f8f8f8;
+        color: rgb(255, 124, 115);
+    }
+
+    50% {
+        background-color: #ffffff;
+        color: rgb(255, 124, 115);
+    }
+}
+
+@-moz-keyframes b09_electric_blinkIn {
+
+    from,
+    to {
+        background-color: #f8f8f8;
+        color: rgb(255, 124, 115);
+    }
+
+    50% {
+        background-color: #ffffff;
+        color: rgb(255, 124, 115);
+    }
+}
