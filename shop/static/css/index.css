@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    background-color:rgb(255, 255, 255);  
+}
+
+.title{
+    font-family: S-CoreDream-5Medium;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 1.5%;
+    color: rgb(255, 124, 115);
+}
+.mainimg{
+    position: fixed;
+    top:5%;
+    width: 100%;
+
+}
+.bottomimg{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+}
+
+.index-container{
+    width: 100%;
+    height: 30%;
+    margin: 0px;
+    margin-top: 5%;
+    text-align: center;
+    position: fixed;
+    top:38%;
+    left: 0%;
+    
+}
+.index {
+    padding-left: 0;
+    margin: 0;
+    
+}
+
+.index li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 50px;
+    font-size: 1.3rem;
+}
+
+.index li:last-child {
+    margin-right: 0px;
+}
